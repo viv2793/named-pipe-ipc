@@ -20,6 +20,6 @@ go run client.go
 - This implemtation is only for Windows currently.
 - Go version used while writing - go 1.13
 
-Credits - 
+## Credits - 
 - https://github.com/natefinch
 
