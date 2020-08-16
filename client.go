@@ -29,19 +29,23 @@ func SendAndReceiveMessage() {
 	var count int
 
 	for {
-		// reader, err := pipe.GetReader()
-		// if err != nil {
-		// 	fmt.Printf("Error in getting pipe reader %v", err)
-		// 	os.Exit(1)
-		// }
-		// r := bufio.NewReader(reader)
-		// msg, err := r.ReadString('\n')
-		// if err != nil {
-		// 	fmt.Printf("Unable to read: %+v\n", err)
-		// 	return
-		// }
-		// fmt.Println("Message received: %s", msg)
+		/*
+			Uncomment below lines to receive messages from named-pipe server
 
+			// reader, err := pipe.GetReader()
+			// if err != nil {
+			// 	fmt.Printf("Error in getting pipe reader %v", err)
+			// 	os.Exit(1)
+			// }
+			// r := bufio.NewReader(reader)
+			// msg, err := r.ReadString('\n')
+			// if err != nil {
+			// 	fmt.Printf("Unable to read: %+v\n", err)
+			// 	return
+			// }
+			// fmt.Println("Message received: %s", msg)
+
+		*/
 		if count > 100 {
 			break
 		}
