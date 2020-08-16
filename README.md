@@ -10,17 +10,19 @@ There is an another repo which contains [named-pipe server](https://github.com/v
 
 ## Steps to run
 - Clone the repo and run navigate to project repo directory.
-- Open windows powershell(Admin) and run client using below command
-```
-go run client.go
-```
-- Note that above command would only start a named-pipe client which can connect to the already existing named-pipe server. So it is necessarry to run a server before running the client using above command.
-- Named-Pipe server can be started by running below command
+- Open windows powershell(Admin) and run server using below command
 ```
 go run server.go
 ```
 - Above command would start a named-pipe server and this server can send/receive message from any named-pipe client.
-- There is another repo which creates named-pipe server for IPC. That server is implemented in C# and can also be used to run named-pipe server. 
+
+- Open windows powershell(Admin) and run client using below command
+```
+go run client.go
+```
+- Note that above command would only start a named-pipe client which can connect to the already existing named-pipe server. So it is necessarry to run the server before running the client.
+
+- There is another repo which can be used for starting named-pipe server for IPC. That server is implemented in C#. 
 - Link - [Named-Pipe Server Repo](https://github.com/viv2793/named-pipe-server)
 
 ## Supported Platform/Version
